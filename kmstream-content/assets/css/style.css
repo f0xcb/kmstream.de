@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c6f1e7;
+}
+
+/* header css */
+
+.container-1 {
+    color: #2c2c54;
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 0.2em;
+    padding: 2em;
+    transform: skewY(-3deg);
+}
+
+/* footer css */
+
+.footer {
+    padding: 2vh 2vh;
+    background-color: #2c2c54;
+    color: #c6f1e7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* navigator css */
+
+.navigator {
+    display: none;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+.navigator.open {
+    display: block;
+}
+
+.navigator ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigator a {
+    color: #2c2c54;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0.75em;
+}
+.navigator a:hover {
+    background: rgba(44, 44, 84, 0.1);
+}
+
+.toggle-navigator {
+    color: #c6f1e7;
+    background-color: #2c2c54;
+    border: none;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 2em;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .navigator a {
+        color: #c6f1e7;
+        background-color: #2c2c54;
+        display: inline;
+    }
+    .navigator a:hover {background: rgba(44, 44, 84, 0.7);}
+    .navigator ul li {display: inline;}
+    .navigator {display: block;}
+    .toggle-navigator {display: none;}
+}
+
+/* card css */
+
+.card {
+    margin: 3vw;
+    padding: 1em;
+    text-align: left;
+    border-radius: 0.5em;
+    background-color: #2c2c54;
+}
+
+.card b {color: #c6f1e7;}
+
+.card i {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #c6f1e7;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card-headline {
+    color: #c6f1e7;
+    font-size: 3em;
+}
+
+.card-text {
+    color: #c6f1e7;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.card-footer {
+    color: #c6f1e7;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+.card img {
+    max-height: 10em;
+    max-height: 6em;
+    margin: 1em auto 1em;
+    display: block;
+}
+
+.card-center {text-align: center;}
+.card-justify {text-align: justify;}
+
+@media (min-width: 600px) {
+    .card {text-align: justify;}
+}
+
+.card-user-edit {
+    background-color: #f49d6e;
+    color: #2c2c54;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 10em;
+}
+
+.card-user-delete {
+    background-color: #a40e4c;
+    color: #2c2c54;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 10em;
+}
+
+.card-bottom-aeroblue {border-bottom: 0.2em solid #c6f1e7;}
+.card-bottom-jazzberryjam {border-bottom: 0.2em solid #a40e4c;}
+.card-bottom-spacecadet {border-bottom: 0.2em solid #2c2c54;}
+.card-bottom-cambridgeblue {border-bottom: 0.2em solid #acc3a6;}
+.card-bottom-sandybrown {border-bottom: 0.2em solid #f49d6e;}
+
+/* login css */
+
+.login-form {
+    margin: 0 auto;
+}
+
+.login-input {
+    padding: 1em 1em;
+    margin: 0.1em auto;
+    display: block;
+    border: 0.2em solid #59606d;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 25em;
+}
+
+.login-input:focus {
+    border: 0.2em solid #2c2c54;
+}
+
+.login-button {
+    background-color: #2c2c54;
+    color: #c6f1e7;
+    text-align: center;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 25em;
+}
+
+.login-button:hover {
+    opacity: 0.8;
+}
+
+.login-img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.login-logo {
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+}
+
+.login-container {
+    padding: 1em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.login-footer {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+    .login-button {
+        width: 40em;
+    }
+    .login-input {
+        width: 40em;
+    }
+}
+
+/* interface form */
+.interface-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.interface-form-button {
+    background-color: #c6f1e7;
+    color: #2c2c54;
+    text-align: center;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 50vw;
+}
+
+.interface-form-button:hover {
+    opacity: 0.8;
+}
+
+/* interface menu */
+.interface-menu-container {
+    margin: 0.5em;
+}
+
+.interface-menu-header {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+}
+
+.interface-menu-ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.5em;
+    text-align: justify;
+    border-radius: 0.5em;
+    background-color: #2c2c54;
+}
+.interface-menu-li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0.7em;
+}
+.interface-menu-link {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #c6f1e7;
+}
+.interface-menu-link i {
+    width: 1em;
+    height: 1em;
+    color: #c6f1e7;
+}
+.interface-menu-link:hover {
+    opacity: 0.7;
+}
+
+/* drop down for interface-navigator */
+.wrap {
+    padding: 2em;
+    font-family: sans-serif;
+}
+.wrap > .messages {
+    background: #fffae6;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.pr-acc {
+    border: 1px solid black;
+    border-radius: 0.25em;
+    margin-bottom: 2em;
+}
+.pr-acc input[type="checkbox"],
+.pr-acc input[type="radio"] {
+    display: none;
+}
+.pr-acc-heading {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.pr-acc-heading label {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+}
+.pr-acc-content {
+    height: auto;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.25s ease-in-out;
+}
+.pr-acc-content p {
+    padding: 1em;
+    margin: 0;
+}
+input[type="checkbox"]:checked + .pr-acc-content,
+input[type="radio"]:checked + .pr-acc-content {
+    max-height: 500px;
+}
